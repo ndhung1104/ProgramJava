@@ -14,12 +14,13 @@ public class hw2 {
             for (int i = 0; i < n; i++)
                 arr[i] = Integer.parseInt(br.readLine());
             Arrays.sort(arr);
-            br.close();
+            
             PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("output.txt")));
             pw.println(n);
             for (int i = 0; i < n; i++)
                 pw.println(arr[i]);
             pw.close();
+            br.close();
         }
         catch (IOException e)
         {
